@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "noUnusedLocals": true, // 未使用变量报错
+    "jsx": "preserve",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./dist/",// 输出目录
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "isolatedModules": true,
+    "removeComments": false,
+    "downlevelIteration": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "declaration": true, // 生成定义文件
+    "declarationMap": false, // 生成定义sourceMap
+    "declarationDir": "dist", // 定义文件输出目录
+    "types": [
+      "vite/client", "jest"
+    ],
+    "baseUrl": "./",  // 这里需要配置
+    "paths": {
+      "@/*": ["src/*"]  // 这里需要配置
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+ ],
+  "exclude": [
+    "node_modules",
+    "src/App.vue",
+    "src/main.ts"
+  ]
+}
