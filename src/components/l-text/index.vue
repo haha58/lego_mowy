@@ -44,15 +44,3 @@ button.l-text-component {
   height: 100%;
 }
 </style>
-
-<template>
-  <div>jhh</div>
-</template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "l-text",
-});
-</script>
