@@ -89,12 +89,6 @@
     "vue-jest": "^5.0.0-alpha.5",
     "vue-tsc": "^1.8.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test",
-      "commit-msg": "node scripts/verify-commit.js"
-    }
-  },
   "lint-staged": {
     "*.{js,vue,jsx,tsx}": [
       "prettier --write",
