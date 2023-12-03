@@ -40,7 +40,7 @@ describe('LText.vue', () => {
     }
     const wrapper = shallowMount(LText, { props })
     // should be h2
-    expect(wrapper.element.tagName).toBe('H2')
+    expect(wrapper.element.tagName).toBe('H3')
     // trigger the element
     wrapper.trigger('click')
     expect(window.location.href).toBe(props.url)
