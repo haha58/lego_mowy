@@ -2,7 +2,7 @@ const chalk = require('chalk')
 const path = require('path')
 const msg = require('fs').readFileSync(path.resolve('.git/COMMIT_EDITMSG'), 'utf-8').trim()
 
-const commitRE = /^(S|R\d+\r?\n(?:M|m)essage: .{1,50})/
+const commitRE = /^((?:M|m)essage: .{1,50})/
 
 if (!commitRE.test(msg)) {
   console.log()
