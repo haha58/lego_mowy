@@ -1,4 +1,7 @@
 import _ from 'lodash-es'
+
+export type TextTagProps = 'h2' | 'p' | 'button'
+
 export interface CommonComponentProps {
   // actions
   actionType: string
