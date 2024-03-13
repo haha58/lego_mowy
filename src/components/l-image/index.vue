@@ -1,6 +1,6 @@
 <template>
   <img
-    class=".l-image-component"
+    class="l-image-component"
     :style="styleProps"
     :src="src"
     :draggable="false"
