@@ -1,7 +1,7 @@
 import { App } from 'vue'
 import LText from './components/l-text/index.vue'
-
-const components = [LText]
+import LImage from './components/l-image/index.vue'
+const components = [LText, LImage]
 
 // 遍历components，并注册全局组件
 const install = (app: App) => {
@@ -11,7 +11,7 @@ const install = (app: App) => {
   })
 }
 // 按需导出
-export { LText }
+export { LText, LImage }
 
 // 整体导出
 export default { install }
