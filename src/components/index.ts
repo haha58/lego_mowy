@@ -1,10 +1,13 @@
-import type { App } from 'vue'
-
 import LText from './l-text/index.vue'
+import LImage from './l-image/index.vue'
+const components = [LText, LImage]
 
-// 注册单个组件的插件
-LText.install = (app: App) => {
-  app.component(LText.name, LText)
+const install = (app: any) => {
+  components.map(component => {
+    app.use(component)
+  })
 }
 
-export default LText
+export { install, LText, LImage }
+
+export default { install }
